@@ -17,7 +17,7 @@ Write.Print(Center.XCenter("""
                      /$$  | $$                 /$$  | $$                                            
                     |  $$$$$$/                |  $$$$$$/                                            
                      \______/                  \______/                                             
-              Made By mishonov#0001 
+              Made By mishonov#1337 
 \n"""), Colors.yellow, interval=0)
 name = Write.Input("Enter File Name:", Colors.yellow_to_green, interval=0.01)
 keysys = Write.Input("Enter Key System Name:", Colors.orange_to_yellow, interval=0.01)
