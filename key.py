@@ -6,8 +6,8 @@ import requests
 from colorama import Fore
 import http
 
-keylink = ""
-name = ""
+keylink = "keys"
+name = "names"
 
 def printname():
   input(f"\n\nPlease Enter The Key to {name}\n>> ")
